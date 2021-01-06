@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revista Comando</title>
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="styles/site.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="background-wrapper" class="background-wrapper full">
+  </div>
+
+  <div class="site-wrapper">
+    <div class="cover-text uppercase">
+      <!-- <h1><span>Revista Comando</span></h1> -->
+      <img id="logo" src="images/comando/logo-revista-comando.jpg" alt="Revista Comando">
+      <h3>
+        <span>Contato</span>
+        <span><a href="https://www.instagram.com/revistacomando/">@revistacomando</a></span>
+        <span><a href="mailto:revistacomando14@gmail.com?Subject=Contato%20site" target="_top">revistacomando14@gmail.com</a></span>
+      </h3>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      var imageNum = Math.floor(Math.random() * 6) + 1;
+      var elem = document.querySelector('#background-wrapper');
+      elem.style = 'background: url(images/comando/bk' + imageNum + '.jpg) no-repeat; background-size: cover;';
+    });
+  </script>
+</body>
+
+</html>
